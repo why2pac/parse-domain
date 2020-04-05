@@ -39,4 +39,4 @@ node_modules
 build/tries
 
 # Don't include the build target directory.
-lib
+#lib
