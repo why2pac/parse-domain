@@ -10,7 +10,7 @@
     "build:lib:clean": "rimraf lib",
     "build:lib:babel": "babel src --out-dir lib",
     "build:tries": "node scripts/build-tries.js",
-    "postinstall:none": "run-s build:tries",
+    "postinstall": "run-s build:tries",
     "prepublish": "run-s build",
     "release": "standard-version",
     "pretest": "run-s build:lib:clean pretest:link",
@@ -38,11 +38,11 @@
   "license": "Unlicense",
   "dependencies": {
     "got": "^8.3.2",
+    "jest": "^24.9.0",
     "mkdirp": "^0.5.1",
     "npm-run-all": "^4.1.5"
   },
   "devDependencies": {
-    "jest": "^24.9.0",
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
